@@ -1,0 +1,94 @@
+/**
+ *padding:		内边距 , 围绕着内容的空间（比如围绕段落的空间）
+ *border:		边框 , 紧接着内边距的实体线段
+ *margin:		外边距 , 围绕元素外部的空间
+ *color:		颜色设置
+ *font-size:	设置字体尺寸
+ *text-align:	显示位置
+ *line-height:	设置行高
+ *letter-spacing:设置间距
+ *font-family: 	设置字体簇，只用于html元素
+ *width: 		属于一个元素的,页面保持xx像素宽
+ *background-color: 元素内容和内边距之后的颜色
+ *color: 		元素内容的颜色（通常是文本）
+ *text-shadow: 	为元素内的文本设置阴影
+ *display: 		设置元素的显示模式（暂时不用担心这部分内容）
+ */
+p {
+  color: red;		/*将所有的p元素内容颜色设置为红色*/
+  font-size: 37px;		/*设置字体尺寸37px */
+}
+
+h1 {
+  color: blue;		/*将所有的h1元素内容颜色设置为蓝色*/
+  font-size: 60px;		/*设置字体尺寸60像素*/
+  text-align: center;		/*标题居中显示*/
+  
+  margin: 0;		/*上方间隙 为0*/
+  padding: 20px 0;		/*设置上方的内边距为20像素，右边0 像素 */
+  color: #00539F;
+  
+  /*为元素内容的字体提供了阴影。它的四个值如下：
+		第一个像素值设置了水平方向的阴影值
+		第二个像素值设置了垂直方向的阴影值
+		第三个像素值设置了阴影模糊的距离（越大的值表示越模糊）
+		第四个值设置了阴影的颜色*/
+  text-shadow: 3px 3px 1px black;
+}
+
+li {
+  color: #156156;		/*将所有的li元素内容颜色设置为灰色*/
+  font-size: 27px;		/*设置字体尺寸16像素   */
+  line-height: 2;		/*设置行高*/
+  letter-spacing: 1px;		/*设置间距*/
+}
+
+h3,h4,h5,h6 {
+  color: yellow;		/*将所有的h3,h4,h5元素内容颜色设置为黄色色*/
+  font-size: 37px;		/*设置字体尺寸27px */
+  line-height: 0;		/*设置行高*/
+  letter-spacing: 0px;		/*设置间距*/
+}
+
+html {
+  font-size: 18px;		/*px 意为“像素（pixels）”: 这个基础字体的尺寸现在是18像素*/
+  font-family: 'Love Ya Like A Sister', cursive;
+  background-color: #706f68;/*指定元素的背景颜色。body 元素用了灰色。*/
+}
+
+body {
+	width: 1300px;		/*强制页面永远保持600像素宽。*/
+	
+	/*当你在 margin 或 padding 中设置两个值时，
+		第一个值代表元素的上方和下方（在这个例子中设置为 0），
+		而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）。
+	你也可以使用一个，三个或四个值*/
+	margin: 0 auto;		/*上方间隙 为0 , 此处的auto  是一个特殊的值，意思是 水平方向上 左右对称*/
+	
+	background-color: #cda36c;		/*指定元素的背景颜色。body 元素用了偏红的黄色。*/
+	
+	/*我们给内边距设置了四个值来让内容四周产生一点空间。
+		//这一次我们不设置上方的内边距，设置右边，下方，左边的内边距为20像素。
+	//值以上、右、下、左的顺序排列。*/
+	padding: 0 20px 20px 20px;		
+	
+	/*为页面四周设置了 5像素的 黑色实线边框。*/
+	border: 5px solid black;
+}
+
+/*居中显示图像*/
+img {
+  display: block;
+  margin: 0 auto;		/*上方间隙 为0 , 此处的auto  是一个特殊的值，意思是 水平方向上 左右对称*/
+}
+
+/*超链接元素*/
+a {
+	font-size: 22px;
+}
+
+/*鼠标放上去*/
+a:hover {
+	color:#f00;		/*变红色*/
+}
+		

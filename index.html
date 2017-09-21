@@ -1,0 +1,82 @@
+<!DOCTYPE html>		<!--文档类型（doctypes）,链接一些应该遵守的规则,有点像自动校正等。因为历史原因必须包含在代码中-->
+<html>		<!--根元素: 这个元素包含了整个页面的内容-->
+	<head>		<!--这里面包括像想被搜索引擎搜索到的关键字（keywords）和页面描述，CSS样式表和字符编码声明等等-->
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'><!--字体-->
+		
+		
+		<meta charset="utf-8">
+		<title>myFirstHtml</title>		<!--浏览器标题-->
+	</head>
+	
+	<body>		<!--这个元素包含了你想被用户看到的内容，不管是文本，图像，视频，游戏，可播放的音轨或是其他内容。-->
+		<h1>一级标题</h1>
+		<h2>二级标题</h2>
+		
+		<ul>
+			<li><h3>三级标题</h3></li>
+			<li><h4>四级标题</h4></li>
+			<li><h5>五级标题</h5></li>
+			<li><h6>六级标题</h6></li>
+		</ul>
+		
+		<p>段落paragraph元素（The element）</p>
+		<p>font-size: 37px;	设置字体尺寸37px</p>
+		<p>
+			<ol>
+				<li>开始标签（The opening tag）：这里包含了元素的名称（这里是 p），被开、闭尖括号所包围。这表示元素从此开始或者开始发挥作用——在本例中即段落由此开始。</li>
+				<li>内容（The content）：这是一个元素的内容，这个例子中就是所输入的文本本身。</li>
+				<li>闭合标签（The closing tag）：与开始标签相似，只是其在元素名之前包含了一个斜杠。这表示着元素的结尾——在这个例子中，就是这一段落的结尾。</li>
+			</ol>
+		</p>
+		
+		<p>元素也可以有<strong>属性</strong>，像这样的</p>
+		
+		<img src="./images/element-attribute.bmp" alt="element-attribute">
+		
+		<p>
+			属性（Attribute）包含了关于元素的一些额外的信息，这些信息本身并不需要被显现在内容（Content）中。
+				在这个例子中，	class 是一个属性名称（name），class 属性允许你为元素提供一个标识名称，以便进一步为元素指定样式或进行其他操作时使用；
+								editor-note 是属性的值(value) 。
+			一个属性应该包含：
+			<ul>
+				<li>在属性与元素名称或上一个属性（如果有超过一个属性的话）之间的空格符；</li>
+				<li>属性的名称，并接上一个等号；</li>
+				<li>由引号所包围的属性值。</li>
+				<li></li>
+				<li>如果图片无法显示，用户经常使用屏幕阅读器来为他们读出 alt 属性里的内容。</li>
+			</ul>	
+			
+		</p>
+		
+		<p class="editor-note">列表</p>
+		
+		<p>
+			很多Web上的内容都是列表，所以 HTML 有一些特别的列表元素。
+			要标记列表通常包括至少两个元素。
+			最常用的列表类型是有序列表（ ordered lists）和无序列表（ unordered lists）：
+			<ul>		<!--无序列表<ul>-->		<!--有序列表<ol>-->
+				<li>无序列表 中项目的顺序并不重要，就像购物列表。这些内容被包括在一个 ul 元素里。</li>
+				<li>有序列表 中项目的顺序很重要，就像一个食谱。这些内容被包括在一个 ol>元素里。</li>
+				<li>列表内的每个项目被包括在一个 li (list item)元素里。</li>
+			</ul>
+		</p>
+		
+		<p>链接</p>
+		
+		<p>
+			<ul>
+				<li>链接非常重要 — 它们让 Web 成为了 WEB（万维网）。</li>
+				<li>要植入一个链接，我们需要使用一个简单的link — a 是 "anchor" （锚）的缩写。</li>
+				<li>如果你在网址开始部分省略了 https:// 或者 http:// 协议，你可能会得到错误的结果。</li>
+				<li>在完成一个链接后，点击它并确保它去向了你指定的网址。</li>
+				<li>如：</li>
+			<ul>
+		</p>
+		
+		<a href="http://www.baidu.com">超链接到百度</a>
+		
+		<button>Change user</button>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
